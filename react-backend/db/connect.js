@@ -11,6 +11,7 @@ connection.connect((err)=>{
   if(err) console.log(err);
 })
 
+//table setup
 connection.query('CREATE TABLE users(userid int, firstname varchar(255), lastname varchar(255), email varchar(320), passalt varchar(100), password varchar(255));', (err, res)=>{
   if(err){
     if(err.code == "ER_TABLE_EXISTS_ERROR"){
@@ -19,6 +20,6 @@ connection.query('CREATE TABLE users(userid int, firstname varchar(255), lastnam
       console.log(`error creating table: ${err.code}`);
     }
   }
-})
+});
 
 module.exports = connection;
