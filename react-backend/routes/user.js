@@ -1,4 +1,5 @@
 var express = require('express');
+var csprng = require('csprng');
 var router = express.Router();
 
 /* user interaction */
