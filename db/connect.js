@@ -33,7 +33,7 @@ function getConnectionParam() {
 */
 function getProfileTable() {
   var out = "CREATE TABLE users(";
-  var obj = getJSONObj('./json/profile');
+  var obj = getJSONObj(__dirname + '/json/profile');
   //TODO: turn this into a string
   return out + ");";
 };
