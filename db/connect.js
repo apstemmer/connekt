@@ -1,11 +1,45 @@
+/*
+TODO:
+  - setup profile table
+  - setup listings table
+  - setup media table
+  - proper error handling
+*/
+
+//file system requirements
+var fs = require('fs');
 var mysql = require('mysql');
 
-var connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "connekt",
-  database: "connekt"
-});
+function prettyJSON(obj) {
+    console.log(JSON.stringify(obj, null, 2));
+}
+
+function getJSONObj(file) {
+  return JSON.parse(fs.readFileSync(file, 'utf8'));
+}
+
+/*
+  function to get connection parameters to database
+  return: JSON object with our connection parameters
+*/
+function getConnectionParam() {
+  //open the connection parameters JSON
+  return getJSONObj('./json/connect.json');
+};
+
+/*
+  function to return the relevant string to create a users table
+  return: mysql query string
+*/
+function getProfileTable() {
+  var out = "CREATE TABLE users(";
+  var obj = getJSONObj('./json/profile');
+  //TODO: turn this into a string
+  return out + ");";
+};
+
+//open database connection
+var connection = mysql.createConnection(getConnectionParam());
 
 connection.connect((err)=>{
   if(err) console.log(err);

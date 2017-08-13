@@ -1,11 +1,12 @@
 # Connekt App
 ## Setup
 
-You need to install all the necessary dependencies for the project. You may wish to install globally 
+You need to install all the necessary dependencies for the project. You may wish to install globally
 ```
-sudo npm install react create-react-app 
-sudo npm update
+sudo npm install react create-react-app
 sudo apt-get install mysql-server
+sudo npm install express --save
+sudo npm update
 ```
 choose the password: connekt for the mysql database
 
