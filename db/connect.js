@@ -24,7 +24,7 @@ function getJSONObj(file) {
 */
 function getConnectionParam() {
   //open the connection parameters JSON
-  return getJSONObj('./json/connect.json');
+  return getJSONObj(__dirname + '/json/connect.json');
 };
 
 /*
