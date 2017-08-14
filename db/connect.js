@@ -18,6 +18,20 @@ function getJSONObj(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
 
+function getCreateTableQuery(fileName, tableName) {
+
+  var query = "CREATE TABLE " + tableName +"(";
+  var obj = getJSONObj(__dirname + '/json/' + fileName + '.json');
+
+  var key = Object.keys(obj);
+
+  for (var i=0;i<key.length;i++) {
+    if(i!=0) query = query + ", ";
+    query = query + key[i] + " " + obj[key[i]];
+  }
+
+  return query + ")";
+}
 /*
   function to get connection parameters to database
   return: JSON object with our connection parameters
@@ -32,10 +46,11 @@ function getConnectionParam() {
   return: mysql query string
 */
 function getProfileTable() {
-  var out = "CREATE TABLE users(";
-  var obj = getJSONObj(__dirname + '/json/profile');
-  //TODO: turn this into a string
-  return out + ");";
+  return getCreateTableQuery('profile','users');
+};
+
+function getListingTable() {
+  return getCreateTableQuery('listing','ads');
 };
 
 //open database connection
@@ -45,8 +60,20 @@ connection.connect((err)=>{
   if(err) console.log(err);
 })
 
+//'CREATE TABLE users(userid int, firstname varchar(255), lastname varchar(255), email varchar(320), passalt varchar(100), password varchar(255));'
 //table setup
-connection.query('CREATE TABLE users(userid int, firstname varchar(255), lastname varchar(255), email varchar(320), passalt varchar(100), password varchar(255));', (err, res)=>{
+connection.query(getProfileTable(), (err, res)=>{
+  if(err){
+    if(err.code == "ER_TABLE_EXISTS_ERROR"){
+      console.log('table already exists');
+    }else{
+      console.log(`error creating table: ${err.code}`);
+    }
+  }
+});
+
+/*
+connection.query(getListingTable(), (err, res)=>{
   if(err){
     if(err.code == "ER_TABLE_EXISTS_ERROR"){
       console.log('table already exists');
@@ -57,3 +84,4 @@ connection.query('CREATE TABLE users(userid int, firstname varchar(255), lastnam
 });
 
 module.exports = connection;
+*/

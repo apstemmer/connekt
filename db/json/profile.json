@@ -5,6 +5,5 @@
   "location"    :"VARCHAR(255)",
   "rating"      :"VARCHAR(255)",
   "phone"       :"VARCHAR(255)",
-  "email"       :"VARCHAR(255)",
-  
+  "email"       :"VARCHAR(255)"
 }
