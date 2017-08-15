@@ -1,9 +1,9 @@
 {
-  "renterID"                 :"VARCHAR(255)",
-  "renteeID"                 :"VARCHAR(255)",
+  "renterID"                 :"int(10)",
+  "renteeID"                 :"int(10)",
   "status"                   :"VARCHAR(255)",
-  "timeActive"               :"VARCHAR(255)",
-  "rating"                   :"VARCHAR(255)",
-  "reviewDescriptionTableID" :"VARCHAR(255)", (create another table full of string format reviews)
-  "timesRented"              :"VARCHAR(255)"
+  "timeActive"               :"VARCHAR(255)", // not sure what format this would be in? Is there a clock system we can use in mySQL?
+  "rating"                   :"int(5)",  // rating out of 5 used to calculate some kind of award system 
+  "reviewDescriptionTableID" :"int(10)", //(create another table full of string format reviews)
+  "timesRented"              :"int(255)"
 }
