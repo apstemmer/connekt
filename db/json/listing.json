@@ -7,3 +7,4 @@
   "reviewDescriptionTableID" :"int(10)", //(create another table full of string format reviews)
   "timesRented"              :"int(255)"
 }
+ 
