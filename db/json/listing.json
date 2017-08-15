@@ -1,0 +1,9 @@
+{
+  "renterID"                 :"VARCHAR(255)",
+  "renteeID"                 :"VARCHAR(255)",
+  "status"                   :"VARCHAR(255)",
+  "timeActive"               :"VARCHAR(255)",
+  "rating"                   :"VARCHAR(255)",
+  "reviewDescriptionTableID" :"VARCHAR(255)", (create another table full of string format reviews)
+  "timesRented"              :"VARCHAR(255)"
+}
