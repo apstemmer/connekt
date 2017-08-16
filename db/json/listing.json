@@ -1,9 +1,9 @@
-+{
- +  "renterID"                 :"int(10)",
- +  "renteeID"                 :"int(10)",
- +  "status"                   :"VARCHAR(255)",
- +  "timeActive"               :"int(10)", // need a way to measure time - is there a clock mechanism we can use as a variable?
- +  "rating"                   :"int(5)",
- +  "reviewDescriptionTableID" :"int(10)", (create another table full of string format reviews)
- +  "timesRented"              :"int(10)"
- +}
+{
+  "renterID"                 :"int(10)",
+  "renteeID"                 :"int(10)",
+  "status"                   :"VARCHAR(255)",
+  "timeActive"               :"int(10)", 
+  "rating"                   :"int(5)",
+  "reviewDescriptionTableID" :"int(10)",
+  "timesRented"              :"int(10)"
+}

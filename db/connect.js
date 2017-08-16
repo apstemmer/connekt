@@ -72,7 +72,7 @@ connection.query(getProfileTable(), (err, res)=>{
   }
 });
 
-/*
+
 connection.query(getListingTable(), (err, res)=>{
   if(err){
     if(err.code == "ER_TABLE_EXISTS_ERROR"){
@@ -84,4 +84,4 @@ connection.query(getListingTable(), (err, res)=>{
 });
 
 module.exports = connection;
-*/
+
