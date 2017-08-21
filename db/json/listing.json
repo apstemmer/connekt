@@ -1,0 +1,9 @@
+{
+  "renterID"                 :"int(10)",
+  "renteeID"                 :"int(10)",
+  "status"                   :"VARCHAR(255)",
+  "timeActive"               :"int(10)", 
+  "rating"                   :"int(5)",
+  "reviewDescriptionTableID" :"int(10)",
+  "timesRented"              :"int(10)"
+}
