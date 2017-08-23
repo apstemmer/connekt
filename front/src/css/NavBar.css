@@ -18,6 +18,10 @@
    text-decoration: none;
 }
 
+.NavBar li img {
+    display: inline-block;
+}
+
 /* Change the link color to #111 (black) on hover */
 .NavBar li a:hover {
    background-color: #111;
