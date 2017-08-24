@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../css/NavBar.css';
 
 //import images
-import { connektLogo } from '../images/connekt-logo.svg';
+import { connektLogo } from './logo.svg';
 
 /*
   Description:
@@ -18,17 +18,19 @@ export class NavBar extends Component {
   render() {
     return (
       <div className="NavBar">
-        <ul>
-          <li>
-            <a>Menu   </a>
-          </li>
-          <li>
-            <img src={connektLogo} alt="logo"/>
-          </li>
-          <li>
-            <a>Profile</a>
-          </li>
-        </ul>
+        <div className="NavBar-list">
+          <ul>
+            <li>
+              <a>Menu   </a>
+            </li>
+            <li>
+              <img src={require('./logo.svg')} className="NavBar-logo" alt="connektlogo"/>
+            </li>
+            <li>
+              <a>Profile</a>
+            </li>
+          </ul>
+        </div>
       </div>
     );
   }

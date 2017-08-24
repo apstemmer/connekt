@@ -3,5 +3,6 @@
 }
 
 .HomePage img {
-  text-align: center;
+  display: block;
+  height: 80px;
 }

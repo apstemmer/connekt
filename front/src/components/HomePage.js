@@ -12,7 +12,7 @@ export class HomePage extends Component {
   render() {
     return (
       <div className="HomePage">
-        <img src={catPic} alt="cat pic" />
+        <img src={require('../images/cute-kittens.jpg')} alt="cat pic" />
       </div>
     );
   }
