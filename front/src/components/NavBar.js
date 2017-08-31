@@ -15,8 +15,7 @@ import '../css/NavBar.css';
 
 export class NavBar extends Component {
   render() {
-    return (
-      <div className="NavBar">
+    return (      
         <div className="NavBar-list">
           <ul>
             <li>
@@ -36,7 +35,6 @@ export class NavBar extends Component {
             </li>
           </ul>
         </div>
-      </div>
     );
   }
 }
