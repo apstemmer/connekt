@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 import '../css/NavBar.css';
-
-//import images
-import { connektLogo } from './logo.svg';
 
 /*
   Description:
@@ -14,6 +16,8 @@ import { connektLogo } from './logo.svg';
     - (other things?)
 */
 
+//<Link to="/Profile">Profile</Link>
+
 export class NavBar extends Component {
   render() {
     return (
@@ -21,13 +25,19 @@ export class NavBar extends Component {
         <div className="NavBar-list">
           <ul>
             <li>
-              <a>Menu   </a>
+            <a href="/Menu">
+              Menu
+            </a>
             </li>
             <li>
-              <img src={require('./logo.svg')} className="NavBar-logo" alt="connektlogo"/>
+              <a href="/Profile">
+                Profile
+              </a>
             </li>
             <li>
-              <a>Profile</a>
+              <a href="/HomePage">
+                HomePage
+              </a>
             </li>
           </ul>
         </div>
@@ -35,3 +45,9 @@ export class NavBar extends Component {
     );
   }
 }
+
+
+/*
+<Link to="/Menu">Menu</Link>
+<Link to="/">Home Page</Link>
+*/
