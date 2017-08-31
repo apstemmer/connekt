@@ -5,11 +5,10 @@ export class Profile extends Component {
   render() {
     return (
       <div className="Profile">
-        <button
-        //onClick={}
-        >
-          Profile
-          </button>
+        <div className="NavBar">
+          <NavBar />
+        </div>
+        <h1>Profile</h1>
       </div>
     );
   }
