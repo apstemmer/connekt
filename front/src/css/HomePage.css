@@ -2,7 +2,15 @@
   text-align: center;
 }
 
-.Banner img {
-  display: block;
-  height: 80px;
+.banner{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:auto;
+  z-index: -1;
+}
+
+.banner img{
+
 }

@@ -17,8 +17,8 @@ export class HomePage extends Component {
         </div>
         <div className="SearchBar">
         </div>
-        <div className="MainBanner">
-          <img src={require('../images/cute-kittens.jpg')} alt="cat pic" />
+        <div className="banner">
+          <img src={require('../images/khaled.jpg')} alt="banner" />
         </div>
         <div className="homePageListings">
         </div>
