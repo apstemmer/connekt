@@ -22,7 +22,3 @@
 
    text-decoration: none;
 }
-/* Change the link color to #111 (black) on hover */
-.NavBar-list li a:hover {
-   background-color: #111;
-}
