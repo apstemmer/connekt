@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Autosuggest from 'react-autosuggest';
 import '../css/SearchBar.css';
 
+//get the suggestions array
+
 const languages = [
   {
     name: 'C',
@@ -119,7 +121,7 @@ export class SearchBar extends React.Component {
   render() {
     const { value, suggestions } = this.state;
     const inputProps = {
-      placeholder: "Search..",
+      placeholder: "Search...",
       value,
       onChange: this.onChange
     };

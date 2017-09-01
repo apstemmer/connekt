@@ -3,6 +3,8 @@ import '../css/HomePage.css';
 
 import { NavBar } from './NavBar.js';
 import { SearchBar } from './SearchBar.js';
+import { Listing } from './Listing.js';
+
 /*
   Description:
     Homepage-button that is on the top bar. It will take the user back to the
@@ -11,6 +13,25 @@ import { SearchBar } from './SearchBar.js';
 
 export class HomePage extends Component {
   render() {
+
+    function getListings(){
+      return [
+        {
+          title : "Ad 1",
+          desc  : "this is ad 1",
+          dist  : "100 miles",
+          img   : require('../images/cute-kittens.jpg')
+        },
+        {
+          title : "Ad 2",
+          desc  : "this is ad 2",
+          dist  : "100 miles",
+          img   : require('../images/cute-kittens.jpg')
+        }
+      ];
+    };
+
+    var listings = getListings();
 
     return (
       <div className="HomePage">
@@ -25,7 +46,16 @@ export class HomePage extends Component {
           <img src={require('../images/khaled.jpg')} alt="banner" />
         </div>
         <div className="homePageListings">
-
+          <ul>
+            {listings.map(function (listing) {
+              return <Listing
+                      title={listing.title}
+                      desc={listing.desc}
+                      dist={listing.dist}
+                      img={listing.img}
+                    />;
+            })}
+          </ul>
         </div>
         <div className="FilterAds">
         </div>
@@ -33,3 +63,13 @@ export class HomePage extends Component {
     );
   }
 }
+
+
+/*
+<Listing
+  title="free guitar!"
+  desc="im giving away a free guitar guys"
+  dist="500 miles"
+  img={require('../images/cute-kittens.jpg')}
+/>
+*/

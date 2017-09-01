@@ -1,0 +1,33 @@
+.Listing {
+  margin: 0;
+  display: flex;
+  background-color: rgba(192,192,192,0.3);
+  height: inherit;
+  margin: auto;
+  flex-direction: row;
+}
+
+.Listing Listing-text {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.Listing Listing-text h1 {
+  color: white;
+}
+
+.Listing Listing-text h2 {
+  justify-content: flex-end;
+}
+
+.Listing Listing-text p {
+}
+
+.Listing Listing-img {
+  justify-content: flex-end;
+  margin-right: auto;
+}
+
+.Listing Listing-img img {
+
+}
