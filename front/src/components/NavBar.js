@@ -19,8 +19,8 @@ export class NavBar extends Component {
         <div className="NavBar-list">
           <ul>
             <li>
-            <a href="/Menu">
-              Menu
+            <a href="/">
+              HomePage
             </a>
             </li>
             <li>

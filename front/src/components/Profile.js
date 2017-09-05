@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import '../css/Profile.css';
 
+import { NavBar } from './NavBar.js';
+
 export class Profile extends Component {
   render() {
     return (

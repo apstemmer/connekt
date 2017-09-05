@@ -1,33 +1,43 @@
 .Listing {
-  margin: 0;
+  border: 3px dotted white;
+  margin: 10px;
   display: flex;
   background-color: rgba(192,192,192,0.3);
   height: inherit;
-  margin: auto;
-  flex-direction: row;
+  justify-content: space-between;
 }
 
-.Listing Listing-text {
+.Listing-text {
+  width: 100%;
+  border: 3px dotted white;
+  display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-start;
 }
 
-.Listing Listing-text h1 {
-  color: white;
+.Listing-text h1 {
+  border: 3px dotted white;
+  flex-grow: 1;
+  text-align: left;
+  align-self:flex-start;
+
 }
 
-.Listing Listing-text h2 {
-  justify-content: flex-end;
+.Listing-text h2 {
+  border: 3px dotted white;
+  text-align: left;
+  flex-grow: 1;
 }
 
-.Listing Listing-text p {
+.Listing-text p {
+  border: 3px dotted white;
+  text-align: left;
+  flex-grow: 1;
 }
 
-.Listing Listing-img {
-  justify-content: flex-end;
-  margin-right: auto;
-}
-
-.Listing Listing-img img {
-
+.Listing img {
+  display: block;
+  border: 3px dotted white;
 }

@@ -11,14 +11,12 @@ export class Listing extends Component {
         <div className="Listing-text">
           <h1>{this.props.title}</h1>
           <p>{this.props.desc}</p>
-        <h2>{"Distance: "+this.props.dist}</h2>
+          <h2>{"Distance: "+this.props.dist}</h2>
         </div>
-        <div className="Listing-img">
-          <img
-            src={this.props.img}
-            alt={this.props.title}
-          />
-        </div>
+        <img
+          src={this.props.img}
+          alt={this.props.title}
+        />
       </div>
     );
   }
