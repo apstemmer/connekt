@@ -1,21 +1,50 @@
 .Listing {
-  border: 3px dotted white;
-  margin: 10px;
+  width: 400px;
+  height: 350px;
+  margin: 0;
   display: flex;
-  background-color: rgba(192,192,192,0.3);
-  height: inherit;
-  justify-content: space-between;
-}
-
-.Listing-text {
-  width: 100%;
-  border: 3px dotted white;
-  display: flex;
+  background-color: rgba(192,192,192,0.95);
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
-  align-content: flex-start;
+  padding: 20px;
+  margin: 0 0 30px 0;
+  border-radius: 5px;
 }
+
+
+.Listing .Listing-img img {
+  width: 100%;;
+}
+
+.Listing .Listing-text {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Listing .Listing-text > * {
+  display: inline-block;
+  text-align: left;
+}
+.Listing h2{
+  width: 100%;
+  margin: 0;
+}
+.Listing span{
+  font-size: 40px;
+}
+.Listing .Listing-text h2{
+  display: block;
+  margin: 0;
+}
+.Listing h2{
+  display: block;
+  margin: 0;
+}
+/*
+
 
 .Listing-text h1 {
   border: 3px dotted white;
@@ -31,13 +60,6 @@
   flex-grow: 1;
 }
 
-.Listing-text p {
-  border: 3px dotted white;
-  text-align: left;
-  flex-grow: 1;
-}
+.Listing Listing-img img {
 
-.Listing img {
-  display: block;
-  border: 3px dotted white;
-}
+}*/

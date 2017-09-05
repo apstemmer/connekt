@@ -8,15 +8,20 @@ export class Listing extends Component {
 
     return (
       <div className="Listing">
-        <div className="Listing-text">
-          <h1>{this.props.title}</h1>
-          <p>{this.props.desc}</p>
-          <h2>{"Distance: "+this.props.dist}</h2>
+        <div className="Listing-img">
+          <img
+            src={this.props.img}
+            alt={this.props.title}
+          />
         </div>
-        <img
-          src={this.props.img}
-          alt={this.props.title}
-        />
+        <div className="Listing-text">
+          <h2>{this.props.title}</h2>
+          <span>{this.props.price}</span>
+          <div>
+            <h3>{this.props.user}</h3>
+            <h4>{this.props.dist}</h4>
+          </div>
+        </div>
       </div>
     );
   }
