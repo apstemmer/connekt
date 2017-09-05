@@ -18,15 +18,87 @@ export class HomePage extends Component {
       return [
         {
           title : "Ad 1",
-          desc  : "this is ad 1",
           dist  : "100 miles",
-          img   : require('../images/cute-kittens.jpg')
+          img   : require('../images/cute-kittens.jpg'),
+          price : '50',
+          user : 'apstemmer'
         },
         {
-          title : "Ad 2",
-          desc  : "this is ad 2",
+          title : "Ad 1",
           dist  : "100 miles",
-          img   : require('../images/cute-kittens.jpg')
+          img   : require('../images/cute-kittens.jpg'),
+          price : '50',
+          user : 'apstemmer'
+        },
+        {
+          title : "Ad 1",
+          dist  : "100 miles",
+          img   : require('../images/cute-kittens.jpg'),
+          price : '50',
+          user : 'apstemmer'
+        },
+        {
+          title : "Ad 1",
+          dist  : "100 miles",
+          img   : require('../images/cute-kittens.jpg'),
+          price : '50',
+          user : 'apstemmer'
+        },
+        {
+          title : "Ad 1",
+          dist  : "100 miles",
+          img   : require('../images/cute-kittens.jpg'),
+          price : '50',
+          user : 'apstemmer'
+        },
+        {
+          title : "Ad 1",
+          dist  : "100 miles",
+          img   : require('../images/cute-kittens.jpg'),
+          price : '50',
+          user : 'apstemmer'
+        },
+        {
+          title : "Ad 1",
+          dist  : "100 miles",
+          img   : require('../images/cute-kittens.jpg'),
+          price : '50',
+          user : 'apstemmer'
+        },
+        {
+          title : "Ad 1",
+          dist  : "100 miles",
+          img   : require('../images/cute-kittens.jpg'),
+          price : '50',
+          user : 'apstemmer'
+        },
+        {
+          title : "Ad 1",
+          dist  : "100 miles",
+          img   : require('../images/cute-kittens.jpg'),
+          price : '50',
+          user : 'apstemmer'
+        },
+        {
+          title : "Ad 1",
+          dist  : "100 miles",
+          img   : require('../images/cute-kittens.jpg'),
+          price : '50',
+          user : 'apstemmer'
+        },
+        {
+          title : "Ad 1",
+          dist  : "100 miles",
+          img   : require('../images/cute-kittens.jpg'),
+          price : '50',
+          user : 'apstemmer'
+        },
+        {
+          title : "Ad 1",
+          dist  : "100 miles",
+          img   : require('../images/cute-kittens.jpg'),
+          price : '50',
+          user : 'apstemmer'
         }
       ];
     };
@@ -38,27 +110,28 @@ export class HomePage extends Component {
         <div className="NavBar">
           <NavBar />
         </div>
-        <div className="searchbar-home">
-          <h1>Order stuff on Connekt</h1>
-          <SearchBar />
-        </div>
+        <header>
+          <div className="searchbar-home">
+            <h1>Order stuff on Connekt</h1>
+            <SearchBar />
+          </div>
+        </header>
         <div className="banner">
           <img src={require('../images/khaled.jpg')} alt="banner" />
         </div>
         <div className="homePageListings">
-          <ul>
             {listings.map(function (listing) {
               return <Listing
                       title={listing.title}
-                      desc={listing.desc}
                       dist={listing.dist}
                       img={listing.img}
+                      user={listing.user}
+                      price={listing.price}
                     />;
             })}
-          </ul>
         </div>
-        <div className="FilterAds">
-        </div>
+        <footer>
+        </footer>
       </div>
     );
   }
