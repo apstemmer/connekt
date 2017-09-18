@@ -1,3 +1,8 @@
 .Profile {
   text-align: right;
 }
+
+.NavBar {
+  position: fixed;
+  width: 100%;
+}
