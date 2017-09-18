@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import '../css/HomePage.css';
 
-import { NavBar } from './NavBar.js';
-import { SearchBar } from './SearchBar.js';
+import { NavBar } from '../components/NavBar.js';
+import { SearchBar } from '../components/SearchBar.js';
 import { Listing } from './Listing.js';
 
 /*
