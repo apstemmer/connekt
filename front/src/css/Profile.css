@@ -1,8 +1,81 @@
 .Profile {
-  text-align: right;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .NavBar {
-  position: fixed;
   width: 100%;
+}
+
+.Profile-top {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  height: 100%;
+  background-color: rgba(153, 153, 153, 0.6);
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.Profile-top-left {
+	
+}
+
+.Profile-top-left  img{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.Profile-top-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.Profile-top-right {
+  text-align: left;
+}
+
+.Profile-top-right-header {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+
+.Profile-social ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100%;
+  background-color: #131923;
+  font-weight: bold;
+  color: white;
+  list-style-type: none;
+}
+
+.Profile-media {
+	
+}
+
+.Profile-ads {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 50px auto;
+  justify-content: space-around;
+}
+
+.Profile-footer {
+  height: 400px;
+  background-color: #131923;	
 }
