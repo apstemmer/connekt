@@ -16,10 +16,14 @@
 }
 
 .NavBar-list li a {
-   display: block;
-   color: white;
-   text-align: center;
-   padding: 14px 16px;
-   text-decoration: none;
-   border-left: 3px solid white;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-left: 3px solid white;
+}
+
+.NavBar-list .SearchBar .react-autosuggest__container {
+  background-color: rgba(153, 153, 153, 0.0);
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../css/Profile.css';
 
 import { NavBar } from '../components/NavBar.js';
+import { Footer } from '../components/Footer.js';
 
 export class Profile extends Component {
   render() {
@@ -49,7 +50,9 @@ export class Profile extends Component {
 		
 		</div>
 		<div className="Profile-footer">
-		
+		  <footer>
+		    <Footer />
+		  </footer>
 		</div>
       </div>
     );

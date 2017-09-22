@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { SearchBar } from './SearchBar';
 import '../css/NavBar.css';
 
 /*
@@ -18,6 +19,9 @@ export class NavBar extends Component {
     return (      
         <div className="NavBar-list">
           <ul>
+			<li>
+			  <SearchBar className="NavBar-searchBar" />
+			</li>
             <li>
               <a href='/'>HomePage</a>
             </li>

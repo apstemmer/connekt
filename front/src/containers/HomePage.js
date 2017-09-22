@@ -13,7 +13,17 @@ import { Listing } from './Listing.js';
 
 export class HomePage extends Component {
   render() {
+	function getScrollY() {
+	  var body = document.body,
+		html = document.documentElement;
 
+	return Math.max( body.scrollHeight, body.offsetHeight, 
+                          html.clientHeight, html.scrollHeight, html.offsetHeight );
+	}
+
+	var scrollY = getScrollY();
+	console.log(scrollY);
+	
     function getListings(){
       return [
         {
