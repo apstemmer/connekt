@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Slider from 'react-slick';
+
 import '../css/Profile.css';
 
 import { NavBar } from '../components/NavBar.js';
@@ -19,6 +21,10 @@ export class Profile extends Component {
 	
 	var profile=getProfile();
 	  
+	var carouselSettings = {
+	  dots: true
+	};
+	
     return (
       <div className="Profile">
         <div className="NavBar">
@@ -44,7 +50,14 @@ export class Profile extends Component {
 		  </ul>
 		</div>
 		<div className="Profile-media">
-		
+		  <Slider {...carouselSettings}>
+		    <div><h3>1</h3></div>
+			<div><h3>2</h3></div>
+			<div><h3>3</h3></div>
+			<div><h3>4</h3></div>
+			<div><h3>5</h3></div>
+			<div><h3>6</h3></div>
+		  </Slider>
 		</div>
 		<div className="Profile-ads">
 		
