@@ -4,6 +4,7 @@ import '../css/HomePage.css';
 import { NavBar } from '../components/NavBar.js';
 import { SearchBar } from '../components/SearchBar.js';
 import { Listing } from './Listing.js';
+import { Footer } from '../components/Footer.js';
 
 /*
   Description:
@@ -120,15 +121,14 @@ export class HomePage extends Component {
         <div className="NavBar">
           <NavBar />
         </div>
-        <header>
-          <div className="searchbar-home">
-            <h1>Order stuff on Connekt</h1>
-            <SearchBar />
-          </div>
-        </header>
         <div className="banner">
-          <img src={require('../images/khaled.jpg')} alt="banner" />
+          <img src={require('../images/collabo.jpg')} alt="banner" />
         </div>
+		<div className="Homepage-filters">
+		  <button>Location</button>
+		  <button>Equipment</button>
+		  <button>Service</button>
+		</div>
         <div className="homePageListings">
             {listings.map(function (listing) {
               return <Listing
@@ -141,6 +141,7 @@ export class HomePage extends Component {
             })}
         </div>
         <footer>
+		  <Footer />
         </footer>
       </div>
     );
@@ -155,4 +156,9 @@ export class HomePage extends Component {
   dist="500 miles"
   img={require('../images/cute-kittens.jpg')}
 />
+
+          <div className="searchbar-home">
+            <h1>Order stuff on Connekt</h1>
+            <SearchBar />
+          </div>
 */

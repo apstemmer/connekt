@@ -8,6 +8,8 @@ import {Login} from './containers/Login';
 import {Signup} from './containers/Signup';
 import {AddListing} from './containers/AddListing';
 
+import './css/Router.css';
+
 const Routes = (props) => (
   <Router>
     <Switch>

@@ -1,0 +1,86 @@
+[
+	{
+	  title : "Ad 1",
+	  dist  : "100 miles",
+	  img   : require('../images/cute-kittens.jpg'),
+	  price : '50',
+	  user : 'apstemmer'
+	},
+	{
+	  title : "Ad 1",
+	  dist  : "100 miles",
+	  img   : require('../images/cute-kittens.jpg'),
+	  price : '50',
+	  user : 'apstemmer'
+	},
+	{
+	  title : "Ad 1",
+	  dist  : "100 miles",
+	  img   : require('../images/cute-kittens.jpg'),
+	  price : '50',
+	  user : 'apstemmer'
+	},
+	{
+	  title : "Ad 1",
+	  dist  : "100 miles",
+	  img   : require('../images/cute-kittens.jpg'),
+	  price : '50',
+	  user : 'apstemmer'
+	},
+	{
+	  title : "Ad 1",
+	  dist  : "100 miles",
+	  img   : require('../images/cute-kittens.jpg'),
+	  price : '50',
+	  user : 'apstemmer'
+	},
+	{
+	  title : "Ad 1",
+	  dist  : "100 miles",
+	  img   : require('../images/cute-kittens.jpg'),
+	  price : '50',
+	  user : 'apstemmer'
+	},
+	{
+	  title : "Ad 1",
+	  dist  : "100 miles",
+	  img   : require('../images/cute-kittens.jpg'),
+	  price : '50',
+	  user : 'apstemmer'
+	},
+	{
+	  title : "Ad 1",
+	  dist  : "100 miles",
+	  img   : require('../images/cute-kittens.jpg'),
+	  price : '50',
+	  user : 'apstemmer'
+	},
+	{
+	  title : "Ad 1",
+	  dist  : "100 miles",
+	  img   : require('../images/cute-kittens.jpg'),
+	  price : '50',
+	  user : 'apstemmer'
+	},
+	{
+	  title : "Ad 1",
+	  dist  : "100 miles",
+	  img   : require('../images/cute-kittens.jpg'),
+	  price : '50',
+	  user : 'apstemmer'
+	},
+	{
+	  title : "Ad 1",
+	  dist  : "100 miles",
+	  img   : require('../images/cute-kittens.jpg'),
+	  price : '50',
+	  user : 'apstemmer'
+	},
+	{
+	  title : "Ad 1",
+	  dist  : "100 miles",
+	  img   : require('../images/cute-kittens.jpg'),
+	  price : '50',
+	  user : 'apstemmer'
+	}
+];

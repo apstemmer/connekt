@@ -22,7 +22,8 @@ export class Profile extends Component {
 	var profile=getProfile();
 	  
 	var carouselSettings = {
-	  dots: true
+	  dots: true,
+	  slidesToShow: 2
 	};
 	
     return (
@@ -51,12 +52,10 @@ export class Profile extends Component {
 		</div>
 		<div className="Profile-media">
 		  <Slider {...carouselSettings}>
-		    <div><h3>1</h3></div>
-			<div><h3>2</h3></div>
-			<div><h3>3</h3></div>
-			<div><h3>4</h3></div>
-			<div><h3>5</h3></div>
-			<div><h3>6</h3></div>
+			<div><img src={require('../images/cute-kittens.jpg')} /></div>
+			<div><img src={require('../images/cute-kittens.jpg')} /></div>
+			<div><img src={require('../images/cute-kittens.jpg')} /></div>
+			<div><img src={require('../images/cute-kittens.jpg')} /></div>
 		  </Slider>
 		</div>
 		<div className="Profile-ads">

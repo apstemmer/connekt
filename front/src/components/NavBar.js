@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Menu from 'react-burger-menu/lib/menus/slide'
+
 import { SearchBar } from './SearchBar';
 import '../css/NavBar.css';
 
@@ -19,18 +21,15 @@ export class NavBar extends Component {
     return (      
         <div className="NavBar-list">
           <ul>
-			<li>
-			  <SearchBar className="NavBar-searchBar" />
-			</li>
-            <li>
-              <a href='/'>HomePage</a>
-            </li>
-            <li>
-              <a href='/Profile'>Profile</a>
-            </li>
-            <li>
-              <a href='/Menu'>Menu</a>
-            </li>
+		    <div id="outer-container" className="NavBar-list-menu">
+              <Menu outerContainerId={ "outer-container" } >
+			    <a href='/'>Home</a>
+			    <a href='/Profile'>Profile</a>
+			  </Menu>
+			</div>
+            <a href='/'>Home</a>
+            <a href='/Profile'>Profile</a>
+			<SearchBar className="NavBar-searchBar" />
           </ul>
         </div>
     );
