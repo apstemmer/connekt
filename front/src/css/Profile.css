@@ -5,10 +5,10 @@
   flex-direction: column;
 }
 
-.NavBar {
-  position: fixed;
-  display: block;
+.Profile-navbar {
+  position: sticky;
   width: 100%;
+  top: 0;
 }
 
 .Profile-top {
@@ -17,8 +17,10 @@
   flex-direction: row;
   height: 100%;
   background-color: rgba(153, 153, 153, 0.6);
-  margin-left: 200px;
-  margin-right: 200px;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin: 0px;
+  border: 0;
 }
 
 .Profile-top-left {
@@ -53,7 +55,12 @@
   border-bottom: 3px solid black;
 }
 
+.Profile-social {
+  position: relative;
+}
+
 .Profile-social ul {
+  margin: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

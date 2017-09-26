@@ -22,7 +22,7 @@ export class NavBar extends Component {
         <div className="NavBar-list">
           <ul>
 		    <div id="outer-container" className="NavBar-list-menu">
-              <Menu outerContainerId={ "outer-container" } >
+              <Menu right outerContainerId={ "outer-container" } >
 			    <a href='/'>Home</a>
 			    <a href='/Profile'>Profile</a>
 			  </Menu>

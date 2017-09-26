@@ -1,14 +1,22 @@
 .HomePage {
-  text-align: center;
   margin: 0px;
+  padding: 0px;
+  border: 0; 
+  outline: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
 
-.NavBar{
+.HomePage-navbar {
   top: 0px;
-  position: sticky;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  width: 100%;
 }
 
-.banner{
+.HomePage-banner {
   top: 0px;
   position: relative;
   display: block;
@@ -19,29 +27,22 @@
   font-size: 0px;
 }
 
-.banner img{
+.HomePage-banner img{
   width: 100%;
 }
 
-.Homepage-filters {
-  display: flex;
-  background-color: black;
-  height: 30px;
-  position: sticky;
-  top: 50px;
-}
-
-.Homepage-filters {
+.HomePage-filters {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   background-color: rgba(0,0,0,0.5);
   height: 100%;
   position: sticky;
+  z-index: 0;
   top: 50px;
 }
 
-button {
+.HomePage-filters button {
   color: white;
   border: none;
   background: rgba(0,0,0,0.0);
@@ -50,9 +51,14 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
+  z-index: 0;
 }
 
-.homePageListings{
+.HomePage-filters button:hover {
+  font-weight: bold;
+}
+
+.HomePage-listings{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

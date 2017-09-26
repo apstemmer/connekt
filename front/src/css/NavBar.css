@@ -8,6 +8,7 @@
   height: 100%;
   margin: 0;
   display: flex;
+  padding: 0;
   background-color: rgba(153, 153, 153, 0.3);
   flex-direction: row;
   justify-content: flex-start;
@@ -61,11 +62,10 @@
 
 .NavBar-list-menu {
   margin: 0px;
-  display: inline-block;
-  color: white;
-  text-align: center;
-  width: 30px;
+  display: block;
   margin-right: 10px;
+  margin-left: 20px;
+  height: 100%;
 }
 
 .NavBar-list-menu .bm-burger-button {
@@ -79,6 +79,23 @@
 }
 
 .NavBar-list-menu .bm-menu {
+  height: 100%;
   background: rgba(153, 153, 153, 1);
   padding: 2.5em 1.5em 0;
+  z-index: 99 !important;
+  top: 0;
+}
+.NavBar-list-menu .bm-menu-wrap {
+  top: 0;
+}
+
+.NavBar-list-menu .bm-overlay {
+  background: rgba(0, 0, 0, 0.0)!important;
+  z-index: 98 !important;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 0;
 }

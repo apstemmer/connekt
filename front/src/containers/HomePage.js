@@ -118,18 +118,18 @@ export class HomePage extends Component {
 
     return (
       <div className="HomePage">
-        <div className="NavBar">
+        <div className="HomePage-navbar">
           <NavBar />
         </div>
-        <div className="banner">
+        <div className="HomePage-banner">
           <img src={require('../images/collabo.jpg')} alt="banner" />
         </div>
-		<div className="Homepage-filters">
+		<div className="HomePage-filters">
 		  <button>Location</button>
 		  <button>Equipment</button>
 		  <button>Service</button>
 		</div>
-        <div className="homePageListings">
+        <div className="HomePage-listings">
             {listings.map(function (listing) {
               return <Listing
                       title={listing.title}

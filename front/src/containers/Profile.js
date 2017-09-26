@@ -28,7 +28,7 @@ export class Profile extends Component {
 	
     return (
       <div className="Profile">
-        <div className="NavBar">
+        <div className="Profile-navbar">
           <NavBar />
         </div>
         <div className="Profile-top">
