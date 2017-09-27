@@ -52,10 +52,10 @@ export class Profile extends Component {
 		</div>
 		<div className="Profile-media">
 		  <Slider {...carouselSettings}>
-			<div><img src={require('../images/cute-kittens.jpg')} /></div>
-			<div><img src={require('../images/cute-kittens.jpg')} /></div>
-			<div><img src={require('../images/cute-kittens.jpg')} /></div>
-			<div><img src={require('../images/cute-kittens.jpg')} /></div>
+			<div className="Profile-media-container"><img src={require('../images/cute-kittens.jpg')} /></div>
+			<div className="Profile-media-container"><img src={require('../images/cute-kittens.jpg')} /></div>
+			<div className="Profile-media-container"><img src={require('../images/cute-kittens.jpg')} /></div>
+			<div className="Profile-media-container"><img src={require('../images/cute-kittens.jpg')} /></div>
 		  </Slider>
 		</div>
 		<div className="Profile-ads">

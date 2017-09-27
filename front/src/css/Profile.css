@@ -17,10 +17,11 @@
   flex-direction: row;
   height: 100%;
   background-color: rgba(153, 153, 153, 0.6);
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 5%;
+  padding-right: 5%;
   margin: 0px;
   border: 0;
+  align: center;
 }
 
 .Profile-top-left {
@@ -57,10 +58,12 @@
 
 .Profile-social {
   position: relative;
+  padding: 0;
 }
 
 .Profile-social ul {
   margin: 0px;
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -71,8 +74,22 @@
   list-style-type: none;
 }
 
-.Profile-media {
-	
+.Profile-media .slick-slide {
+  display: block;
+  align-items: center;
+  background-color: rgba(153, 153, 153, 0.4); 
+}
+
+.Profile-media-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+
+.Profile-media-container img{
+  width: 50%;
+  align: center;
 }
 
 .Profile-ads {
