@@ -6,8 +6,13 @@
     "gh-pages": "^1.0.0",
     "react": "^15.6.1",
     "react-autosuggest": "^9.3.2",
+    "react-burger-menu": "^2.1.6",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.11"
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.11",
+    "react-slick": "^0.15.4",
+    "react-social-icons": "^2.7.0",
+    "slick-carousel": "^1.7.1"
   },
   "homepage": "https://apstemmer.github.io/connekt",
   "scripts": {

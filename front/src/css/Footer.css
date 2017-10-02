@@ -32,21 +32,21 @@
 .Footer-bottom {
   margin-top: 20px;
   display: flex;
-  flex-direction: row;	
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
   text-align: left;
 }
 
 .Footer-bottom-contact {
   display: flex;
   flex-direction: column;
-  justify-content: column-start; 
+  justify-content: column-start;
   align-items: stretch;
 }
-  
+
 .Footer-bottom-address {
   display: flex;
   flex-direction: column;
-  justify-content: column-start; 
+  justify-content: column-start;
   align-items: stretch;
 }

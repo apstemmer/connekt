@@ -5,10 +5,15 @@ black: #111111
 gray: #AAAAAA
 silver: #DDDDDD
 */
+* {
+  min-height: 0;
+  min-width: 0;
+}
+
 .HomePage {
   margin: 0px;
   padding: 0px;
-  border: 0; 
+  border: 0;
   outline: 0;
   top: 0;
   left: 0;
@@ -78,4 +83,18 @@ silver: #DDDDDD
 footer{
   height: 400px;
   background-color: black;
+}
+.HomePage-carousel{
+}
+
+.slick-prev{
+  left: 5px;
+}
+
+.slick-next{
+  right: 5px;
+}
+
+.slick-next, .slick-prev{
+  z-index: 5
 }

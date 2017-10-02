@@ -1,5 +1,4 @@
 .Listing {
-  width: 300px;
   height: 100%;
   margin: 0;
   display: flex;
@@ -12,7 +11,7 @@
 }
 
 .Listing .Listing-img {
-  margin-bottom: 2px solid white;	
+  margin-bottom: 2px solid white;
 }
 
 .Listing .Listing-img img {
@@ -21,22 +20,22 @@
 
 .Listing .Listing-text {
 
-  display: flex;
+  /*display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap;*/
 }
 
 .Listing .Listing-text > * {
-  display: inline-block;
-  text-align: left;
+  /*display: inline-block;
+  text-align: left;*/
 }
 .Listing h2{
-  width: 100%;
-  margin: 0;
+  /*width: 100%;
+  margin: 0;*/
 }
 .Listing span{
-  font-size: 20px;
+  /*font-size: 20px;*/
 }
 .Listing .Listing-text h2{
   display: block;
@@ -46,7 +45,7 @@
   display: block;
   margin: 0;
 }
-/*
+
 
 
 .Listing-text h1 {
@@ -65,4 +64,4 @@
 
 .Listing Listing-img img {
 
-}*/
+}
